@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.Operators.Base;
 
-internal abstract class UnaryOperator
+public abstract class UnaryOperator : Operator
 {
         protected double _operandValue;
 

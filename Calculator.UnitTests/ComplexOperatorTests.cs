@@ -1,10 +1,5 @@
 ﻿using Calculator.Operations;
 using FluentAssertions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator.UnitTests
 {
@@ -17,6 +12,15 @@ namespace Calculator.UnitTests
 
             result.ToResult().Should().Be(6);
             result.PrintSentence().Should().Be("sum of division of 20 by 4 and 1 is 6");
+        }
+
+        [Fact]
+        public void ComplexTest2()
+        {
+            var result = new Sum(new Division(20, 2), new Faculty(2));
+
+            result.ToResult().Should().Be(12);
+            result.PrintSentence().Should().Be("sum of division of 20 by 2 and faculty of 2 is 12");
         }
     }
 }
