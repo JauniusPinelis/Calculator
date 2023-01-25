@@ -3,26 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Calculator.Operators.Base;
 
 namespace Calculator.Operations
 {
-    public class Sum : Operation
+    public class Sum : BinaryOperator
     {
         public Sum(object operand1, object operand2) : base(operand1, operand2)
         {
         }
 
-        protected override string GetExpression()
+        public override string GetExpression()
         {
             return $"({_operand1Expression} + {_operand2Expression})";
         }
 
-        protected override string GetExpressionSentence()
+        public override string GetExpressionSentence()
         {
             return $"sum of {_operand1ExpressionSentence} and {_operand2ExpressionSentence}";
         }
 
-        protected override double Process()
+        public override double GetResult()
         {
             return _operand1Value + _operand2Value;
         }

@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.Operations
 {
-    internal interface IOperation
+    public class Faculty
     {
-        double ToResult();
     }
 }

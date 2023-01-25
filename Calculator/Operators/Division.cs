@@ -1,28 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Calculator.Operators.Base;
 
 namespace Calculator.Operations;
 
-public class Division : Operation
+public class Division : BinaryOperator
 {
     public Division(object operand1, object operand2) : base(operand1, operand2)
     {
     }
 
-    protected override double Process()
+    public override double GetResult()
     {
         return _operand1Value / _operand2Value;
     }
 
-    protected override string GetExpression()
+    public override string GetExpression()
     {
         return $"({_operand1Expression} / {_operand2Expression})";
     }
 
-    protected override string GetExpressionSentence()
+    public override string GetExpressionSentence()
     {
         return $"division of {_operand1ExpressionSentence} by {_operand2ExpressionSentence}";
     }

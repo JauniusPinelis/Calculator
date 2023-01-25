@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.UnitTests
 {
-    public class OperationTests
+    public class ComplexOperatorTests
     {
         [Fact]
         public void ComplexTest()

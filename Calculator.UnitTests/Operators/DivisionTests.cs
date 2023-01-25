@@ -1,7 +1,7 @@
 ﻿using Calculator.Operations;
 using FluentAssertions;
 
-namespace Calculator.UnitTests.Operations;
+namespace Calculator.UnitTests.Operators;
 
 public class DivisionTests
 {
