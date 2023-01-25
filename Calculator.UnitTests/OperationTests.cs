@@ -16,6 +16,7 @@ namespace Calculator.UnitTests
             var result = new Sum(new Division(20, 4), 1);
 
             result.ToResult().Should().Be(6);
+            result.PrintSentence().Should().Be("sum of division of 20 by 4 and 1 is 6");
         }
     }
 }

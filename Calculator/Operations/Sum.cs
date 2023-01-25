@@ -14,12 +14,12 @@ namespace Calculator.Operations
 
         protected override string GetExpression()
         {
-            throw new NotImplementedException();
+            return $"({_operand1Expression} + {_operand2Expression})";
         }
 
         protected override string GetExpressionSentence()
         {
-            throw new NotImplementedException();
+            return $"sum of {_operand1ExpressionSentence} and {_operand2ExpressionSentence}";
         }
 
         protected override double Process()
