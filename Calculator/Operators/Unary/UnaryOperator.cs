@@ -8,26 +8,11 @@ namespace Calculator.Operators.Unary;
 
 public abstract class UnaryOperator : Operator
 {
-    protected double _operandValue;
+    protected readonly Operator _operand;
 
-    protected string _operandExpression;
-
-    protected string _operandExpressionSentence;
-
-    public UnaryOperator(object operand)
+    public UnaryOperator(Operator operand)
     {
-        if (operand is Operator operation)
-        {
-            _operandValue = operation.GetResult();
-            _operandExpression = operation.GetExpression();
-            _operandExpressionSentence = operation.GetExpressionSentence();
-        }
-        else
-        {
-            _operandValue = Convert.ToDouble(operand);
-            _operandExpression = _operandValue.ToString();
-            _operandExpressionSentence = _operandValue.ToString();
-        }
+        _operand = operand;
     }
 
 }

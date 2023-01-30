@@ -8,16 +8,16 @@ public class Division : BinaryOperator
 
     public override double GetResult()
     {
-        return _operand1Value / _operand2Value;
+        return _operand1.GetResult() / _operand2.GetResult();
     }
 
     public override string GetExpression()
     {
-        return $"({_operand1Expression} / {_operand2Expression})";
+        return $"({_operand1.GetExpression()} / {_operand2.GetExpression()})";
     }
 
     public override string GetExpressionSentence()
     {
-        return $"division of {_operand1ExpressionSentence} by {_operand2ExpressionSentence}";
+        return $"division of {_operand1.GetExpressionSentence()} by {_operand2.GetExpressionSentence()}";
     }
 }
