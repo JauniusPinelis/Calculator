@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator.Operators.Base
+namespace Calculator.Operators.Binary
 {
     public abstract class BinaryOperator : Operator
     {

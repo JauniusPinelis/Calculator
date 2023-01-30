@@ -1,11 +1,10 @@
-﻿using Calculator.Operators.Base;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator.Operations
+namespace Calculator.Operators.Unary
 {
     public class Faculty : UnaryOperator
     {

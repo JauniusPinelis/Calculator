@@ -1,1 +1,1 @@
-# Calculator
+# Calculator implementation to practice Composite pattern

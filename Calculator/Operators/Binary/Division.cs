@@ -1,6 +1,4 @@
-﻿using Calculator.Operators.Base;
-
-namespace Calculator.Operations;
+﻿namespace Calculator.Operators.Binary;
 
 public class Division : BinaryOperator
 {

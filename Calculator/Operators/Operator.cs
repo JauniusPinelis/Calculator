@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator.Operators.Base
+namespace Calculator.Operators
 {
     public abstract class Operator
     {
