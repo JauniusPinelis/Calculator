@@ -1,4 +1,5 @@
-﻿using Calculator.Operations;
+﻿using Calculator.Operators.Binary;
+using Calculator.Operators.Unary;
 using FluentAssertions;
 
 namespace Calculator.UnitTests

@@ -8,7 +8,7 @@ namespace Calculator.Operators.Binary
 {
     public class Sum : BinaryOperator
     {
-        public Sum(object operand1, object operand2) : base(operand1, operand2)
+        public Sum(Operator operand1, Operator operand2) : base(operand1, operand2)
         {
         }
 

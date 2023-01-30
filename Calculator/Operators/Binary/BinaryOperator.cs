@@ -17,7 +17,7 @@ namespace Calculator.Operators.Binary
         protected string _operand1ExpressionSentence;
         protected string _operand2ExpressionSentence;
 
-        public BinaryOperator(object operand1, object operand2)
+        public BinaryOperator(Operator operand1, Operator operand2)
         {
             if (operand1 is Operator operation)
             {

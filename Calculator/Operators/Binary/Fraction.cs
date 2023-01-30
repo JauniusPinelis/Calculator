@@ -8,7 +8,7 @@ namespace Calculator.Operators.Binary
 {
     public class Fraction : BinaryOperator
     {
-        public Fraction(object operand1, object operand2) : base(operand1, operand2)
+        public Fraction(Operator operand1, Operator operand2) : base(operand1, operand2)
         {
         }
 

@@ -2,7 +2,7 @@
 
 public class Division : BinaryOperator
 {
-    public Division(object operand1, object operand2) : base(operand1, operand2)
+    public Division(Operator operand1, Operator operand2) : base(operand1, operand2)
     {
     }
 

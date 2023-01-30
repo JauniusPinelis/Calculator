@@ -1,33 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace Calculator.Operators
+namespace Calculator.Operators;
+
+public abstract class Operator
 {
-    public abstract class Operator
+    public double ToResult()
     {
-        public double ToResult()
-        {
-            return GetResult();
-        }
-
-        public string Print()
-        {
-            return $"{GetExpression()} = {ToResult()}";
-        }
-
-        public string PrintSentence()
-        {
-            return $"{GetExpressionSentence()} is {ToResult()}";
-        }
-
-        public abstract double GetResult();
-
-        public abstract string GetExpression();
-
-        public abstract string GetExpressionSentence();
+        return GetResult();
     }
+
+    public string Print()
+    {
+        return $"{GetExpression()} = {ToResult()}";
+    }
+
+    public string PrintSentence()
+    {
+        return $"{GetExpressionSentence()} is {ToResult()}";
+    }
+
+    public static implicit operator Operator(double value) => new NumericOperator(value);
+
+    public abstract double GetResult();
+
+    public abstract string GetExpression();
+
+    public abstract string GetExpressionSentence();
 }
